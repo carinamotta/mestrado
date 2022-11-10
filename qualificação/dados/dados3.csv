@@ -1,0 +1,173 @@
+data,parcela,har,haf,participantes,scriba,medidor,hc,especie,amostra,mt,tarso,bc,bl,bp,ps,m,am,ac,fc,pc,re,notes
+27-Jul-22,64,7:30,11:00,"CIM, GGC, AFB",CIM,GGC,8:30,Arremon flavirostris,1,62,-,-,-,-,33,29,-,-,y,-,0,escaped
+27-Jul-22,64,7:30,11:00,"CIM, GGC, AFB",CIM,GGC,8:30,Myiothlypis flaveola,2,47,24.24,11.9,4.52,3.77,33,14,-,-,y,-,0,
+27-Jul-22,64,7:30,11:00,"CIM, GGC, AFB",CIM,GGC,8:30,Arremon flavirostris,3,61,26.56,15.42,5.68,7.82,44,17,-,-,y,-,0,
+27-Jul-22,64,7:30,11:00,"CIM, GGC, AFB",CIM,GGC,10:30,Arremon flavirostris,4,65,25.65,16.06,5.79,8.3,44,21,-,-,y,-,0,
+27-Jul-22,64,7:30,11:00,"CIM, GGC, AFB",CIM,GGC,10:30,Basileuterus culicivorus,5,42,17.44,8.86,3.63,3.27,33,9,-,-,y,-,0,
+27-Jul-22,64,7:30,11:00,"CIM, GGC, AFB",CIM,GGC,10:30,Myiothlypis flaveola,6,45,22.41,12.61,4.55,3.96,33,12,-,-,y,-,0,
+27-Jul-22,64,7:30,11:00,"CIM, GGC, AFB",CIM,GGC,11:00,Taraba major,7,81,34.64,24.72,7.08,9.37,33,48,-,-,y,-,0,femea
+5-Aug-22,56,6:50,11:00,"CIM, GGC, RT, RS, DH",CIM,GGC,7:20,Eucometis penicillata,8,70,19.05,15.55,7.54,7.49,43,27,-,-,y,-,0,
+5-Aug-22,56,6:50,11:00,"CIM, GGC, RT, RS, DH",CIM,GGC,8:20,Baryphthengus ruficapillus,9,200,31.72,39.23,10.89,13.46,43,157,-,-,y,-,0,"collected two feces samples, one from the bag (9) and one from a leaf on the ground (9*)"
+9-Aug-22,22,6:45,11:30,"CIM, GGC, RT, RS, DH",CIM,GGC,7:15,Basileuterus culicivorus,10,56,21.86,10.87,3.94,3.76,43,13,-,6.4,n,-,0,
+9-Aug-22,22,6:45,11:30,"CIM, GGC, RT, RS, DH",CIM,GGC,7:15,Myiothlypis flaveola,11,56,22.65,12.26,4.17,3.41,43,13,-,6.3,n,-,0,
+9-Aug-22,22,6:45,11:30,"CIM, GGC, RT, RS, DH",CIM,GGC,7:20,Trichothraupis melanops,12,66.5,19.91,12.41,5.51,5.42,43,23.5,-,7.8,y,-,0,
+9-Aug-22,22,6:45,11:30,"CIM, GGC, RT, RS, DH",RT,GGC,7:50,Platyrinchus mystaceus,13,49,17.08,9.51,6.77,3.03,33,16,-,5.5,y,-,0,weight does not make sense?
+9-Aug-22,22,6:45,11:30,"CIM, GGC, RT, RS, DH",RT,GGC,7:50,Sittasomus griseicapillus,14,57,18.8,12.87,3.6,3.16,43,14,-,8,n,-,0,
+9-Aug-22,22,6:45,11:30,"CIM, GGC, RT, RS, DH",RT,GGC,7:50,Cnemotriccus fuscatus,15,59,17.85,11.93,5.79,3.84,43,16,-,6.7,y,-,0,
+9-Aug-22,22,6:45,11:30,"CIM, GGC, RT, RS, DH",CIM,GGC,9:50,Turdus leucomelas,16,120,33.28,20.97,6.43,5.05,43,77,-,12.6,y,-,0,feces mostly just urea
+9-Aug-22,22,6:45,11:30,"CIM, GGC, RT, RS, DH",DH,GGC,10:50,Basileuterus culicivorus,17,52,18.89,9.74,3.79,3.26,43,9,-,5.8,y,-,0,
+9-Aug-22,22,6:45,11:30,"CIM, GGC, RT, RS, DH",DH,GGC,10:50,Platyrinchus mystaceus,18,53.5,17.17,8.3,6.73,2.82,43,10.5,-,5.4,y,-,0,
+9-Aug-22,22,6:45,11:30,"CIM, GGC, RT, RS, DH",DH,GGC,10:50,Thamnophilus caerulescens,19,61.5,22.81,14.53,4.65,5.91,43,18.5,-,6.8,y,-,0,casal
+9-Aug-22,22,6:45,11:30,"CIM, GGC, RT, RS, DH",DH,GGC,10:50,Thamnophilus caerulescens,20,65,23.95,15.74,5.47,5.71,43,22,-,7.3,y,-,0,casal
+9-Aug-22,22,6:45,11:30,"CIM, GGC, RT, RS, DH",DH,GGC,10:50,Myiothlypis flaveola,21,46,23.07,11.67,4.13,3.4,33,13,-,6.4,y,-,0,
+9-Aug-22,22,6:45,11:30,"CIM, GGC, RT, RS, DH",DH,GGC,10:50,Sittasomus griseicapillus,22,46.5,19.32,11.85,3.63,3.19,33,13.5,-,7.7,y,-,0,
+10-Aug-22,88,7:20,11:00,"CIM, GGC, RT, DH",DH,GGC,7:40,Myiothlypis flaveola,23,56,23.4,10.29,3.83,3.29,43,13,RP1,6.4,y,-,0,
+10-Aug-22,88,7:20,11:00,"CIM, GGC, RT, DH",DH,GGC,7:40,Myiothlypis flaveola,24,56.5,22.79,11.04,4.07,3.67,43,13.5,RP2,6.9,y,-,0,
+10-Aug-22,88,7:20,11:00,"CIM, GGC, RT, DH",DH,GGC,7:40,Cnemotriccus fuscatus,25,55.5,18.42,13.88,5.07,3.83,43,12.5,RP1,6.6,y,-,0,
+10-Aug-22,88,7:20,11:00,"CIM, GGC, RT, DH",DH,GGC,7:40,Asemospiza fuliginosa,26,56.5,15.48,10.75,4.16,6.62,43,13.5,RP1,6,y,-,0,max bill width 5.36
+10-Aug-22,88,7:20,11:00,"CIM, GGC, RT, DH",CIM,GGC,10:30,Turdus leucomelas,27,130,31.91,18.74,5.96,6.51,43,87,RP2,11.9,y,-,0,"very heavy, weight likely wrong"
+10-Aug-22,88,7:20,11:00,"CIM, GGC, RT, DH",CIM,GGC,11:00,Turdus leucomelas,28,170,31.2,19.6,4.93,5.98,43,127,RP3,11.8,y,-,0,"very heavy, weight likely wrong"
+11-Aug-22,90,8:00,11:30,"CIM, GGC",CIM,GGC,8:30,Thlypopsis sordida,29,56,19.76,12.07,4.09,4.13,43,13,RP1,6.2,y,-,0,
+11-Aug-22,90,8:00,11:30,"CIM, GGC",CIM,GGC,8:30,Tolmomyias sulphurescens,30,56.5,16.6,11.87,5.76,3.96,43,13.5,RP1,6.8,y,-,0,
+11-Aug-22,90,8:00,11:30,"CIM, GGC",CIM,GGC,8:30,Arremon flavirostris,31,70.5,25.17,14.58,5.46,7.72,43,27.5,RP1,7.9,n,-,0,
+11-Aug-22,90,8:00,11:30,"CIM, GGC",CIM,GGC,9:30,Thamnophilus doliatus,32,68.5,24.14,14.94,5.81,6.26,43,25.5,RP1,8,y,-,0,
+23-Aug-22,20,7:15,11:20,"CIM, GGC, RT, VMG",VMG,GGC,7:40,Platyrinchus mystaceus,33,52,17.32,9.03,7.11,2.87,43,9,RP1,5.2,y,-,0,
+23-Aug-22,20,7:15,11:20,"CIM, GGC, RT, VMG",VMG,GGC,7:40,Arremon flavirostris,34,63,-,-,-,-,43,20,-,-,y,-,0,
+23-Aug-22,20,7:15,11:20,"CIM, GGC, RT, VMG",VMG,GGC,7:40,Conopophaga lineata,35,61,30.99,11.83,5.31,3.8,43,18,RP1,6.9,y,-,0,
+23-Aug-22,20,7:15,11:20,"CIM, GGC, RT, VMG",CIM,GGC,7:40,Sittasomus griseicapillus,36,55.5,19.93,11.63,3.72,3.27,43,12.5,RP1,7.9,n,-,0,
+23-Aug-22,20,7:15,11:20,"CIM, GGC, RT, VMG",CIM,GGC,9:40,Myiothlypis flaveola,37,56.5,22.72,11.06,3.92,3.53,43,13.5,RP1,6.5,y,-,0,
+23-Aug-22,20,7:15,11:20,"CIM, GGC, RT, VMG",CIM,GGC,10:40,Sittasomus griseicapillus,38,54,16.92,10,3.74,2.97,43,11,RP2,6.7,y,-,0,
+23-Aug-22,20,7:15,11:20,"CIM, GGC, RT, VMG",CIM,GGC,10:40,Basileuterus culicivorus,39,51.5,18.41,8.73,3.75,3,43,8.5,RP1,5.1,y,-,0,
+24-Aug-22,64,7:15,11:15,"CIM, GGC, RT",CIM,GGC,7:45,Eucometis penicillata,40,55,22.05,15.94,6.95,7.82,26,29,RP1,8.9,y,-,0,
+24-Aug-22,64,7:15,11:15,"CIM, GGC, RT",CIM,GGC,7:45,Arremon flavirostris,41,53,25.73,14.63,6.07,7.6,26,27,RP1,7.8,y,-,0,
+24-Aug-22,64,7:15,11:15,"CIM, GGC, RT",CIM,GGC,7:45,Myiothlypis flaveola,42,57,23.79,11.57,4.75,3.65,26,31,RP1,6.5,y,-,0,
+24-Aug-22,64,7:15,11:15,"CIM, GGC, RT",CIM,GGC,7:45,Cnemotriccus fuscatus,43,56,16,11.46,5.31,3.77,26,30,RP1,6.6,y,-,0,
+26-Aug-22,84,8:00,12:00,"CIM, GGC, RT, VMG",VMG,GGC,8:30,Troglodytes aedon,44,38,17.63,12.16,3.06,2.97,26,12,RP1,5.1,y,-,0,
+26-Aug-22,84,8:00,12:00,"CIM, GGC, RT, VMG",VMG,GGC,8:30,Myiothlypis flaveola,45,38.5,21.86,12.05,4.51,3.39,26,12.5,RP3,6,y,-,0,
+26-Aug-22,84,8:00,12:00,"CIM, GGC, RT, VMG",VMG,GGC,9:30,Taraba major,46,83,38.81,25.12,6.1,9.69,26,57,RP1,9.3,y,-,0,macho
+26-Aug-22,84,8:00,12:00,"CIM, GGC, RT, VMG",VMG,GGC,9:30,Geothlypis aequinoctialis,47,38.5,21.32,10.14,3.38,3.02,26,12.5,RP1,8.8,y,-,0,"macho, 8.21 mm bico cima, 13.06 mm baixo "
+26-Aug-22,84,8:00,12:00,"CIM, GGC, RT, VMG",VMG,GGC,9:30,Myiarchus ferox,48,54,21.94,17.65,9.29,6.41,26,28,RP1,8.8,y,-,0,fezes collected from leaf
+26-Aug-22,84,8:00,12:00,"CIM, GGC, RT, VMG",VMG,GGC,10:10,Eucometis penicillata,49,53.5,21.39,14.6,7.23,7.43,26,27.5,RP1,8.9,y,-,0,
+26-Aug-22,84,8:00,12:00,"CIM, GGC, RT, VMG",VMG,GGC,10:10,Nemosia pileata,50,-,-,-,-,-,-,-,-,-,y,-,0,escaped
+26-Aug-22,84,8:00,12:00,"CIM, GGC, RT, VMG",VMG,GGC,10:45,Coryphospingus cucullatus,51,41.5,18.12,10.98,4.77,6.04,26,15.5,-,16.4,y,-,0,"wing size does not make sense, maybe 6.4? macho, semente with casearia seeds, two tubes, * collected from ground"
+26-Aug-22,84,8:00,12:00,"CIM, GGC, RT, VMG",VMG,GGC,11:20,Eucometis penicillata,52,52.5,20.6,14.3,7.54,7.3,26,26.5,RP2,8.85,y,-,0,
+30-Aug-22,206,7:00,11:00,"CIM, GGC, RT",CIM,GGC,7:30,Turdus leucomelas,53,93,29.83,19.24,5.25,6.1,26,67,RP2,11.6,y,-,0,
+31-Aug-22,87,7:00,11:00,"CIM, GGC, RT",CIM,GGC,7:30,Myiothlypis flaveola,54,37.5,21.62,11.61,4.33,3.44,26,11.5,RP4,6.3,y,-,0,
+31-Aug-22,87,7:00,11:00,"CIM, GGC, RT",CIM,GGC,7:30,Clibanornis rectirostris,55,72,27.02,22.9,5.23,6.31,26,46,RP1,8.8,y,-,0,
+31-Aug-22,87,7:00,11:00,"CIM, GGC, RT",CIM,GGC,7:30,Platyrinchus mystaceus,56,35.5,16.88,9.88,7.07,2.8,26,9.5,RP1,5.7,y,-,0,
+31-Aug-22,87,7:00,11:00,"CIM, GGC, RT",RT,GGC,8:10,Stilpnia cayana,57,46,17.74,10.57,5.46,5.4,26,20,RP1,7.6,y,-,0,
+31-Aug-22,87,7:00,11:00,"CIM, GGC, RT",RT,GGC,8:10,Myiothlypis flaveola,58,39,22.74,10.51,3.85,3.64,26,13,RP2,6.9,y,-,1,recapture
+31-Aug-22,87,7:00,11:00,"CIM, GGC, RT",RT,GGC,9:00,Myiothlypis flaveola,59,39.5,22.76,11.64,4.48,3.57,26,13.5,RP5,6.6,y,-,0,
+31-Aug-22,87,7:00,11:00,"CIM, GGC, RT",RT,GGC,9:30,Taraba major,60,81,36.01,24.6,6.6,9.58,26,55,RP1,9.7,y,-,0,
+31-Aug-22,87,7:00,11:00,"CIM, GGC, RT",RT,GGC,10:00,Lepidocolaptes angustirostris,61,54.5,-,-,-,-,26,28.5,-,-,y,-,0,escaped
+31-Aug-22,87,7:00,11:00,"CIM, GGC, RT",RT,GGC,11:00,Lepidocolaptes angustirostris,62,55.5,20.42,29.99,3.71,5.03,26,29.5,RP1,10,y,-,0,mostly urea
+31-Aug-22,87,7:00,11:00,"CIM, GGC, RT",RT,GGC,11:00,Myiarchus ferox,63,51,20.94,15.28,7.67,5.35,26,25,RP1,8.6,y,-,0,
+1-Sep-22,207,7:05,11:00,"CIM, GGC, RT",CIM,GGC,7:30,Manacus manacus,64,42,20.47,9.21,4.22,3.56,26,16,RP1,5.3,y,-,0,"female manakin, melastomacaea seeds and fruit in feces"
+1-Sep-22,207,7:05,11:00,"CIM, GGC, RT",CIM,GGC,7:30,Antilophia galeata,65,48.5,18.48,7.29,4.35,4.19,26,22.5,RP1,8.1,y,-,0,samples stored in Carina's freezer over the weekend
+1-Sep-22,207,7:05,11:00,"CIM, GGC, RT",RT,GGC,8:15,Myiothlypis flaveola,66,40,23.78,11.2,4.3,3.88,26,14,RP1,6.5,y,-,0,
+1-Sep-22,207,7:05,11:00,"CIM, GGC, RT",CIM,GGC,9:50,Leptopogon amaurocephalus,67,37.5,14.71,11.37,3.89,3.72,26,11.5,RP1,6.3,y,-,0,
+1-Sep-22,207,7:05,11:00,"CIM, GGC, RT",CIM,GGC,10:35,Turdus rufiventris,68,100,32.9,15.68,2.5,3.04,26,74,RP1,12.4,y,-,0,
+1-Sep-22,207,7:05,11:00,"CIM, GGC, RT",RT,GGC,10:35,Conopophaga lineata,69,47,26.76,7.22,1.47,0.17,26,21,RP1,6.8,n,-,0,"bill size looks wrong (profundidade), very little feces"
+7-Sep-22,56,6:30,7:30,"CIM, GGC, RT, ML",CIM,GGC,7:30,Tachyphonus coronatus,70,28.3,19.78,14.23,6.21,6.75,4.1,24.2,RP1,8.2,y,y,0,"raining, male"
+9-Sep-22,22,6:05,11:20,"CIM, GGC, RT, JB",CIM,GGC,6:35,Myiothlypis flaveola,71,17.1,22.92,11.33,4.69,3.7,3.7,13.4,RP1,6.9,n,y,0,
+9-Sep-22,22,6:05,11:20,"CIM, GGC, RT, JB",CIM,GGC,10:20,Myiothlypis flaveola,72,13.9,24.62,11.71,4.28,3.68,0,13.9,RP2,6.9,y,y,0,
+13-Sep-22,56,6:42,11:20,"CIM, GGC, RT, JB",RT,GGC,8:20,Turdus leucomelas,73,59.4,32.62,19.12,5.19,6.16,0,59.4,RP1,11.9,y,y,0,
+16-Sep-22,90,6:40,11:20,"CIM, GGC, IF",IF,GGC,8:20,Myiothlypis flaveola,74,73.9,22.84,10.18,4.06,3.34,0,73.9,RP6,6.2,y,y,0,
+16-Sep-22,90,6:40,11:20,"CIM, GGC, IF",CIM,GGC,8:20,Leptopogon amaurocephalus,75,11.4,16.16,11.4,4.31,3.57,0,11.4,RP1,6.1,y,n,0,
+20-Sep-22,64,6:22,11:20,"CIM, GGC, VMG, GA",CIM,-,6:50,Basileuterus culicivorus,76,-,-,-,-,-,-,-,-,-,y,n,0,escaped
+20-Sep-22,64,6:22,11:20,"CIM, GGC, VMG, GA",VGM,GGC,6:50,Troglodytes aedon,77,7.8,17.8,12.88,3.06,2.76,0,7.8,RP1,5,y,y,0,
+20-Sep-22,64,6:22,11:20,"CIM, GGC, VMG, GA",VGM,GGC,6:50,Coryphospingus cucullatus,78,15.1,17.91,10.04,4.46,5.69,0,15.1,RP1,6.3,y,y,0,casearia nas fezes
+20-Sep-22,64,6:22,11:20,"CIM, GGC, VMG, GA",VGM,GGC,6:50,Myiothlypis flaveola,79,14,23.53,11.61,4.53,3.52,0,14,RP1,6.6,y,y,1,recaptura
+21-Sep-22,20,6:15,11:15,"CIM, GGC",CIM,GGC,6:50,Conopophaga lineata,80,23.8,31.23,10.16,5.48,3.67,4.1,19.7,RP1,6.9,y,y,1,recaptura
+21-Sep-22,20,6:15,11:15,"CIM, GGC",CIM,GGC,6:50,Coryphospingus cucullatus,81,18.1,18.71,9.95,4.03,5.56,0,18.1,RP1,6.2,y,y,0,
+21-Sep-22,20,6:15,11:15,"CIM, GGC",CIM,GGC,6:50,Cnemotriccus fuscatus,82,17,17.65,11.37,5.4,3.82,3.9,13.1,RP1,7,y,y,0,
+21-Sep-22,20,6:15,11:15,"CIM, GGC",CIM,GGC,7:30,Platyrinchus mystaceus,83,12.6,17.77,9.11,7.19,2.74,0,12.6,RP1,5.5,y,y,1,"recapture, little material"
+21-Sep-22,20,6:15,11:15,"CIM, GGC",CIM,GGC,7:30,Eucometis penicillata,84,-,21.22,13.51,6.58,7.12,0,-,RP3,8.7,y,y,0,"escaped before weight, casearia?"
+21-Sep-22,20,6:15,11:15,"CIM, GGC",CIM,GGC,7:30,Myiothlypis flaveola,85,17.4,23.01,-,-,-,3.9,13.5,RP1,-,y,y,1,recapture
+21-Sep-22,20,6:15,11:15,"CIM, GGC",CIM,GGC,7:30,Basileuterus culicivorus,86,9.4,18.85,9.43,3.64,3.31,0,9.4,RP2,5.9,y,y,0,recaptured at 9:50 on the same day
+21-Sep-22,20,6:15,11:15,"CIM, GGC",CIM,GGC,8:20,Antilophia galeata,87,24.5,19.43,8.33,4.73,4.15,4.1,20.4,RP1,7.6,y,y,0,female
+21-Sep-22,20,6:15,11:15,"CIM, GGC",CIM,GGC,8:20,Antilophia galeata,88,28.8,20.21,7.41,4.49,4.16,0,28.8,-,7.6,y,y,0,"not marked on the wing, male"
+21-Sep-22,20,6:15,11:15,"CIM, GGC",CIM,GGC,8:20,Thamnophilus caerulescens,89,17,22.83,14.89,4.25,5.2,0,17,RP1,6.4,y,y,0,female
+21-Sep-22,20,6:15,11:15,"CIM, GGC",CIM,GGC,8:50,Thamnophilus caerulescens,90,18.4,22.72,13.02,5.19,5.55,0,18.4,RP1,7,y,y,0,male
+21-Sep-22,20,6:15,11:15,"CIM, GGC",CIM,GGC,9:20,Thamnophilus caerulescens,91,20.1,23.38,13.29,4.6,5.62,0,20.1,RP2,6.9,y,y,0,female
+23-Sep-22,88,6:20,11:20,"CIM, GGC",GGC,GGC,7:30,Myiothlypis flaveola,92,12.1,22.2,10.97,4.05,3.55,0,12.1,RP7,6.2,y,y,0,
+23-Sep-22,88,6:20,11:20,"CIM, GGC",GGC,GGC,10:20,Thraupis sayaca,93,32.2,20.2,12.16,6.99,6.57,0,32.2,RP1,8.8,y,y,0,093* was collected from the sheet
+23-Sep-22,88,6:20,11:20,"CIM, GGC",GGC,GGC,10:20,Leptopogon amaurocephalus,94,12.4,15.45,11.13,4.15,3.73,0,12.4,RP2,6.1,y,y,0,little material 
+30-Sep-22,84,6:00,11:00,"CIM, GGC",CIM,GGC,6:30,Myiothlypis flaveola,95,-,22.43,9.82,4.21,3.45,-,-,-,-,y,n,0,fugiu 
+30-Sep-22,84,6:00,11:00,"CIM, GGC",CIM,GGC,7:10,Myiothlypis flaveola,96,13.3,22.2,11.57,4.32,3.41,0,13.3,RP8,6,y,y,0,
+30-Sep-22,84,6:00,11:00,"CIM, GGC",CIM,GGC,11:00,Myiothlypis flaveola,97,12.7,22.15,9.81,4.66,3.45,0,12.7,-,6.5,y,y,0,não marcamos
+4-Oct-22,87,6:05,11:05,"CIM, GGC",GGC,GGC,6:45,Euphonia violacea,98,15.5,15.64,9.25,6.01,5.56,0,15.5,RP1,6.2,y,y,0,"female, amostra da lona 098*"
+4-Oct-22,87,6:05,11:05,"CIM, GGC",GGC,GGC,7:25,Arremon flavirostris,99,28.6,26.54,13.5,6.21,7.68,0,28.6,RP2,8.1,y,n,0,
+4-Oct-22,87,6:05,11:05,"CIM, GGC",GGC,GGC,7:25,Myiothlypis flaveola,100,12.6,22.24,10.95,4.37,3.43,0,12.6,RP9,6.5,y,y,0,
+4-Oct-22,87,6:05,11:05,"CIM, GGC",CIM,GGC,8:00,Cnemotriccus fuscatus,101,12.9,16.51,13.07,5.76,3.76,0,12.9,RP2,6.9,y,y,0,
+4-Oct-22,87,6:05,11:05,"CIM, GGC",CIM,GGC,9:15,Myiothlypis flaveola,102,17.7,22.07,10.93,4.1,3.39,0,17.7,RP10,6.2,y,y,0,
+4-Oct-22,87,6:05,11:05,"CIM, GGC",CIM,GGC,9:50,Ramphocelus carbo,103,26.7,21.83,14.92,6.03,6.96,0,26.7,RP1,7.9,y,y,0,female
+4-Oct-22,87,6:05,11:05,"CIM, GGC",CIM,GGC,10:20,Myiodynastes maculatus,104,42.4,20.36,21.77,10.52,7.82,0,42.4,RP1,10.6,y,y,0,migrant
+5-Oct-22,207,5:55,11:00,"CIM, GGC, FO, AJR",CIM,GGC,6:25,Myiothlypis flaveola,105,13.1,23.18,10.38,4.7,3.53,0,13.1,RP2,6.3,y,y,0,"recaptured at 8:15, fezes added to same tube"
+5-Oct-22,207,5:55,11:00,"CIM, GGC, FO, AJR",AJR,GGC,6:25,Basileuterus culicivorus,106,9.4,19.39,9.37,3.87,3.32,0,9.4,RP1,5.5,y,y,0,
+5-Oct-22,207,5:55,11:00,"CIM, GGC, FO, AJR",AJR,GGC,6:25,Lathrotriccus euleri,107,10.3,13.99,11.16,5.56,3.5,0,10.3,RP1,6.8,y,y,0,
+5-Oct-22,207,5:55,11:00,"CIM, GGC, FO, AJR",FO,GGC,7:30,Cnemotriccus fuscatus,108,13.6,17.51,12.1,5.29,3.79,0,13.6,RP1,6,y,y,0,
+5-Oct-22,207,5:55,11:00,"CIM, GGC, FO, AJR",AJR,GGC,8:15,Ramphocelus carbo,109,27.4,21.48,15.14,7.03,7.29,0,27.4,RP1,8.5,y,y,0,"male, 109* collected from sheet"
+5-Oct-22,207,5:55,11:00,"CIM, GGC, FO, AJR",FO,GGC,8:15,Ramphocelus carbo,110,-,23.16,16.62,7.42,7.35,0,-,RP1,7.9,y,y,0,"female, escaped"
+5-Oct-22,207,5:55,11:00,"CIM, GGC, FO, AJR",AJR,GGC,11:00,Platyrinchus mystaceus,111,8.9,17.12,9.19,6.57,3.8,0,8.9,RP1,5.1,n,y,0,
+6-Oct-22,206,5:55,11:00,"CIM, GGC",CIM,GGC,7:00,Nyctidromus albicollis,112,95.7,30.48,10.74,5.93,3.84,0,95.7,RP1,17.05,n,n,0,"macho, 36.78 abertura da boca"
+6-Oct-22,206,5:55,11:00,"CIM, GGC",CIM,GGC,7:30,Antilophia galeata,113,21,19.91,7.44,4.57,4.03,0,21,RP1,7.5,y,y,0,"female, 113* collected from sheet"
+6-Oct-22,206,5:55,11:00,"CIM, GGC",CIM,GGC,8:40,Myiothlypis flaveola,114,14.3,22.02,11.3,4.73,3.5,0,14.3,RP1,6.1,y,y,0,114* collected from the sheet
+6-Oct-22,206,5:55,11:00,"CIM, GGC",CIM,GGC,8:40,Myiothlypis flaveola,115,14,22.8,11.62,4.11,3.44,0,14,RP2,6.2,y,y,0,115* collected from sheet 
+6-Oct-22,206,5:55,11:00,"CIM, GGC",CIM,GGC,10:30,Conirostrum speciosum,116,9.6,15.58,9.63,3.44,3.53,0,9.6,RP1,5.4,y,y,0,female
+6-Oct-22,206,5:55,11:00,"CIM, GGC",CIM,GGC,10:30,Basileuterus culicivorus,117,11.3,18.06,9.61,3.9,3.06,0,11.3,RP1,5.2,y,y,0,
+11-Oct-22,22,5:50,11:00,"CIM, GGC, VMG, LNQ",CIM,GGC,6:20,Leptopogon amaurocephalus,118,12.1,15.45,12.65,3.96,3.66,0,12.1,RP1,6.6,n,y,0,"casal, tube not autoclaved"
+11-Oct-22,22,5:50,11:00,"CIM, GGC, VMG, LNQ",CIM,GGC,6:20,Leptopogon amaurocephalus,119,11.6,16.34,11.58,3.72,3.37,0,11.6,RP2,6.4,n,y,0,"casal, tube not autoclaved"
+11-Oct-22,22,5:50,11:00,"CIM, GGC, VMG, LNQ",CIM,GGC,6:50,Turdus leucomelas,120,68.9,32.94,19.31,5.42,5.91,0,68.9,RP1,11,y,y,0,"just a little bit of poop juice, tube not autoclaved"
+11-Oct-22,22,5:50,11:00,"CIM, GGC, VMG, LNQ",CIM,GGC,7:20,Platyrinchus mystaceus,121,9.2,17.31,8.05,6.81,2.84,0,9.2,RP2,5.5,n,y,0,already marked? tube not autoclaved
+11-Oct-22,22,5:50,11:00,"CIM, GGC, VMG, LNQ",LNQ,GGC,7:50,Eucometis penicillata,122,28.2,22.05,16.31,6.46,7.24,0,28.2,RP1,8.6,y,y,0,tube not autoclaved
+11-Oct-22,22,5:50,11:00,"CIM, GGC, VMG, LNQ",VMG,GGC,8:40,Myiothlypis flaveola,123,15.8,-,-,-,-,0,15.8,RP2,-,y,y,1,"recap, tube not autoclaved"
+11-Oct-22,22,5:50,11:00,"CIM, GGC, VMG, LNQ",CIM,GGC,9:20,Sittasomus griseicapillus,124,12.9,17.16,11.24,3.36,3.15,0,12.9,-,7.5,n,y,0,not marked
+11-Oct-22,22,5:50,11:00,"CIM, GGC, VMG, LNQ",LNQ,GGC,9:50,Cnemotriccus fuscatus,125,11.4,15.82,12.25,6.07,3.59,0,11.4,RP1,6.8,y,y,0,
+12-Oct-22,56,5:50,11:00,"CIM, GGC, FO",FO,GGC,6:20,Leptotila verreauxi,126,171.2,34.76,15.98,3.32,4.32,0,171.2,RP1,14.2,y,y,0,
+12-Oct-22,56,5:50,11:00,"CIM, GGC, FO",FO,GGC,6:20,Eucometis penicillata,127,28.3,20.97,14.44,6.72,6.96,0,28.3,RP1,8.6,y,y,0,
+13-Oct-22,90,6:00,11:00,"CIM, GGC, IG",IG,GGC,6:30,Turdus leucomelas,128,66.3,32.41,20.78,5.71,6.15,0,66.3,RP4,11.9,y,y,0,
+13-Oct-22,90,6:00,11:00,"CIM, GGC, IG",IG,GGC,6:30,Myiothlypis flaveola,129,13.9,21.98,10.8,4.03,3.5,0,13.9,-,6.5,n,y,0,"RP4 cut short, not marked"
+13-Oct-22,90,6:00,11:00,"CIM, GGC, IG",IG,GGC,7:10,Myiothlypis flaveola,130,12.9,22.02,10.19,4.43,3.49,0,12.9,RP10,6.1,y,y,0,
+13-Oct-22,90,6:00,11:00,"CIM, GGC, IG",IG,GGC,7:10,Ramphocelus carbo,131,26.9,21.1,15.08,6.91,7.95,0,26.9,RP1,8.5,y,y,0,macho
+13-Oct-22,90,6:00,11:00,"CIM, GGC, IG",IG,GGC,7:45,Antilophia galeata,132,21.2,18.75,7.19,3.84,4.2,0,21.2,RP1,7.6,y,y,0,"132* collected from the sheet, femea, Miconia sp. in feces?"
+13-Oct-22,90,6:00,11:00,"CIM, GGC, IG",IG,GGC,8:50,Myiothlypis flaveola,133,13.8,23.19,10.97,4.6,3.57,0,13.8,RP11,6.2,y,y,0,
+13-Oct-22,90,6:00,11:00,"CIM, GGC, IG",IG,GGC,8:50,Leptotila verreauxi,134,118.7,27.39,17.19,3.7,4.14,0,118.7,RP1,132,y,y,0,marcação a partir da segunda
+18-Oct-22,20,6:00,11:00,"CIM, GGC, GA",GA,GGC,7:05,Arremon flavirostris,135,-,24.11,12.65,5.71,7.07,0,-,RP1,70,y,y,0,fugiu
+18-Oct-22,20,6:00,11:00,"CIM, GGC, GA",GA,GGC,7:05,Myiarchus ferox,136,24.3,20.5,15.98,6.84,5.35,0,24.3,RP1,84,y,y,0,fezes com semente
+18-Oct-22,20,6:00,11:00,"CIM, GGC, GA",GA,GGC,7:05,Automolus leucophthalmus,137,34.3,22.26,19.6,4.46,5.89,0,34.3,RP1,80,y,y,0,
+18-Oct-22,20,6:00,11:00,"CIM, GGC, GA",GA,GGC,8:30,Myiodynastes maculatus,138,54,20.12,20.7,10.55,7.73,0,54,RP1,105,n,y,0,
+18-Oct-22,20,6:00,11:00,"CIM, GGC, GA",GA,GGC,8:30,Myiothlypis flaveola,139,13,22.35,12.18,4.44,3.75,0,13,RP2,62,y,y,0,
+18-Oct-22,20,6:00,11:00,"CIM, GGC, GA",GA,GGC,9:20,Antilophia galeata,140,20.9,19.4,7.82,4.61,4.05,0,20.9,RP2,72,y,y,0,140* collected from sheet and ground
+18-Oct-22,20,6:00,11:00,"CIM, GGC, GA",GA,GGC,10:20,Leptopogon amaurocephalus,141,11.6,14.73,11.94,14.16,3.83,0,11.6,RP1,65,y,y,0,
+18-Oct-22,20,6:00,11:00,"CIM, GGC, GA",GA,GGC,10:20,Myiarchus ferox,142,25.6,20.43,15.4,7.68,5.47,0,25.6,RP2,85,y,y,0,142* collected from sheet
+18-Oct-22,20,6:00,11:00,"CIM, GGC, GA",GA,GGC,11:00,Platyrinchus mystaceus,143,8.8,-,-,-,-,-,-,-,-,y,-,1,recapture
+20-Oct-22,64,5:45,11:00,"CIM, GGC",CIM,GGC,6:50,Arremon flavirostris,144,27.2,26.2,13.81,5.7,7.53,0,27.2,RP1,76,y,y,1,recapture
+20-Oct-22,64,5:45,11:00,"CIM, GGC",CIM,GGC,7:30,Myiothlypis flaveola,145,14.2,24.22,11.79,4.59,3.55,0,14.2,RP1,75,y,y,1,recapture
+20-Oct-22,64,5:45,11:00,"CIM, GGC",CIM,GGC,7:30,Arremon flavirostris,146,-,-,-,-,-,-,-,RP2,-,y,n,0,fugiu
+20-Oct-22,64,5:45,11:00,"CIM, GGC",CIM,GGC,8:00,Leptopogon amaurocephalus,147,16.1,15.79,11.95,3.84,3.67,0,16.1,RP1,67,y,y,0,147a is a pellet regurgitated 
+20-Oct-22,64,5:45,11:00,"CIM, GGC",CIM,GGC,8:00,Tolmomyias sulphurescens,148,23.1,18.26,12.52,6.73,4.04,0,23.1,RP1,66,y,y,0,
+20-Oct-22,64,5:45,11:00,"CIM, GGC",CIM,GGC,8:00,Myiothlypis flaveola,149,16.7,22.13,10.78,4.36,3.66,0,16.7,RP2,62,y,y,0,
+20-Oct-22,64,5:45,11:00,"CIM, GGC",CIM,GGC,8:00,Turdus leucomelas,150,64,31.79,17.82,5.18,5.99,0,64,RP1,123,y,y,0,"150* with seeds, collected from sheet"
+20-Oct-22,64,5:45,11:00,"CIM, GGC",CIM,GGC,8:45,Myiothlypis flaveola,151,13.9,23.71,11.2,4.25,3.7,0,13.9,RP3,67,y,y,0,
+20-Oct-22,64,5:45,11:00,"CIM, GGC",CIM,GGC,11:00,Dryobates passerinus,152,27.4,15.9,18.22,5.46,5.63,0,27.4,RP1,88,y,y,0,
+22-Oct-22,88,6:00,11:00,"CIM, GGC, FO",FO,GGC,7:30,Myiothlypis flaveola,153,13.5,22.89,11.06,4.3,3.46,0,13.5,RP2,66,y,y,1,recapture
+29-Oct-22,87,6:10,11:10,"CIM, GGC, IM, AJOS",CIM,GGC,6:40,Myiothlypis flaveola,154,14.4,21.23,10.32,4.01,3.6,0,14.4,RP4,61,y,n,1,recapture
+29-Oct-22,87,6:10,11:10,"CIM, GGC, IM, AJOS",CIM,GGC,6:40,Arremon flavirostris,155,28.7,24.57,13.78,6.12,7.61,0,28.7,RP3,81,y,y,0,
+29-Oct-22,87,6:10,11:10,"CIM, GGC, IM, AJOS",CIM,GGC,7:40,Synallaxis frontalis,156,14.1,18.81,10.09,2.98,3.64,0,14.1,RP1,56,n,y,0,156* collected from the sheet
+29-Oct-22,87,6:10,11:10,"CIM, GGC, IM, AJOS",AJOS,GGC,7:40,Synallaxis frontalis,157,15.4,19.47,10.28,3.09,3.5,0,15.4,RP2,55,n,y,0,
+29-Oct-22,87,6:10,11:10,"CIM, GGC, IM, AJOS",AJOS,GGC,9:00,Myiarchus ferox,158,27.5,21.44,16.38,8.07,5.98,0,27.5,RP2,85,y,y,0,
+29-Oct-22,87,6:10,11:10,"CIM, GGC, IM, AJOS",AJOS,GGC,9:00,Coereba flaveola,159,9.5,12.31,15.73,12.31,3.48,0,9.5,RP1,55,n,y,0,
+29-Oct-22,87,6:10,11:10,"CIM, GGC, IM, AJOS",AJOS,GGC,9:00,Coereba flaveola,160,9.6,16.06,12.8,3.68,3.64,0,9.6,RP2,53,n,y,0,
+29-Oct-22,87,6:10,11:10,"CIM, GGC, IM, AJOS",AJOS,GGC,9:50,Arremon flavirostris,161,29.9,23.18,13.67,6.09,7.24,0,29.9,RP4,80,y,y,0,
+29-Oct-22,87,6:10,11:10,"CIM, GGC, IM, AJOS",AJOS,GGC,9:50,Cnemotriccus fuscatus,162,13.9,18.07,12.65,5.46,3.89,0,13.9,RP3,65,n,y,0,
+29-Oct-22,87,6:10,11:10,"CIM, GGC, IM, AJOS",AJOS,GGC,10:30,Myiodynastes maculatus,163,-,-,-,-,-,-,-,-,-,y,n,0,"fugiu, 163* from sheet"
+29-Oct-22,87,6:10,11:10,"CIM, GGC, IM, AJOS",AJOS,GGC,10:30,Myiodynastes maculatus,164,44.6,18.78,20.17,11.34,8.26,0,44.6,RP2,109,n,y,0,
+29-Oct-22,87,6:10,11:10,"CIM, GGC, IM, AJOS",CIM,GGC,11:00,Myiothlypis flaveola,165,13.7,22.06,11.66,4.23,3.47,0,13.7,RP9,62,n,y,1,recap?
+1-Nov-22,84,6:05,11:00,"CIM, GGC",CIM,GGC,7:50,Coryphospingus cucullatus,166,15.5,18.85,11.09,4.41,5.71,0,15.5,RP1,63,y,y,0,
+2-Nov-22,206,5:45,11:00,"CIM, GGC, IM",CIM,GGC,6:50,Cnemotriccus fuscatus,167,11.9,17.35,10.47,5.26,3.74,0,11.9,RP1,62,y,y,0,"from the sheet, 167*"
+2-Nov-22,206,5:45,11:00,"CIM, GGC, IM",CIM,GGC,11:00,Lepidocolaptes angustirostris,168,33.7,21.07,34.04,4.16,5.12,0,33.7,RP1,100,y,y,0,"collected from the sheet, 168*"
+4-Nov-22,207,5:45,11:00,"CIM, GGC",CIM,GGC,6:20,Malacoptila striata,169,41.2,20.09,24.42,7.39,9.1,0,41.2,RP1,93,y,y,0,rabo crescendo 
+4-Nov-22,207,5:45,11:00,"CIM, GGC",CIM,GGC,6:20,Cnemotriccus fuscatus,170,12.6,17.64,12.51,5.42,3.81,0,12.6,RP2,61,y,y,0,
+4-Nov-22,207,5:45,11:00,"CIM, GGC",CIM,GGC,7:50,Platyrinchus mystaceus,171,8.6,17.02,9.46,7.27,2.88,0,8.6,RP2,53,y,y,0,collected from the sheet 53*
+4-Nov-22,207,5:45,11:00,"CIM, GGC",CIM,GGC,10:30,Galbula ruficauda,172,24.3,10.48,46.28,5.36,6.24,0,24.3,RP2,80,y,y,0,
