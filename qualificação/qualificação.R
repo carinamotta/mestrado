@@ -17,14 +17,9 @@ package.list <- c("here", #so I don't have to deal with setting a WD
                   "remotes",
                   "psych",
                   "matrix"
-                  
 )
 
-# Install devtools if not available
-if(!"remotes" %in% installed.packages()[,"Package"]) install.packages("remotes")
 
-# Install traitdata package from Github
-remotes::install_github("RS-eco/traitdata", build_vignettes = T, force=T)
 
 #installing the packages if they aren't already on the computer
 new.packages <- package.list[!(package.list %in% installed.packages()
@@ -169,71 +164,62 @@ write.csv(group_by_parcela, "summary.csv")
 
 
 
-duration(num = NULL, units = "seconds", ...)
+#duration(num = NULL, units = "seconds", ...)
 
 #describeBy(dados_diet, group=dados_diet$parcela, fast=TRUE)
 
-curve_all = specaccum(dados_diet, method = "random", 
-                      permutations = 100)
+#CUMMULATIVE NUMBER OF SPECIES TOTAL 
 
-create_binary_matrix(x = dados_diet,
-                     )
-spp1 <- xtabs(~especie+dia, data=dados_diet)
+#fix order 
 
-write.csv(spp1, "x_tabs.csv")
+df_order <- dados_diet[order(dados_diet$dia),]
 
-spp1 <- as.tibble(spp)
+#get rid of any species that appear for a second time, only first occurence
 
-group_by_data <- 
-  dados_diet %>%                             #Applying group_by &summarise
-  group_by(data, parcela) %>%
-  summarise(especie = n_distinct(especie))
-  
-
-
-
-df <- dados_diet[order(dados_diet$dia),]
-
-summary(dados_diet)
-
-
-
-filtered <- df %>%
+filtered <- df_order %>%
   filter(duplicated(especie) == FALSE)
 
-group_by_data <- 
+#group by day
+
+group_by_dia <- 
   filtered %>%                             #Applying group_by &summarise
   group_by(dia) %>%
   summarise(especie = n())
 
-group_by_data$z <- 0
+#create new column 
+group_by_dia$cumspp_t <- 0
 
+#define place for for loop to store values 
 sum <- 0
 
-for (i in 1:nrow(group_by_data)) {
-              #print(i)
-              sum <- (group_by_data[i, 2] + sum) 
-              group_by_data[i, 3] <- sum
+#for loop to calculate cumulative number of spp.
+
+for (i in 1:nrow(group_by_dia)) {
+              sum <- (group_by_dia[i, 2] + sum) 
+              group_by_dia[i, 3] <- sum
 }
 
-colnames(group_by_data)[3] ="cumsum"
+#get rid of spp. column 
 
-ggplot(group_by_data, aes(dia, cumsum)) + 
+group_by_dia <- group_by_dia %>%
+  select(-especie)
+
+ggplot(group_by_dia, aes(dia, cumspp_t)) + 
   geom_point()
 
+## GOIABA presence/absence 
+
+#create new df grouping data by goiaba presence
 
 com_goiaba <- filtered %>%
   filter(goiaba == "com goiaba")
-
-sem_goiaba <- filtered %>%
-  filter(goiaba == "sem goiaba")
 
 com_goiaba_grouped <- 
   com_goiaba %>%                             #Applying group_by &summarise
   group_by(dia) %>%
   summarise(especie = n())
 
-com_goiaba_grouped$z <- 0
+com_goiaba_grouped$cumspp <- 0
 
 sum <- 0
 
@@ -243,16 +229,24 @@ for (i in 1:nrow(com_goiaba_grouped)) {
   com_goiaba_grouped[i, 3] <- sum
 }
 
-colnames(com_goiaba_grouped)[3] ="cumsum"
+#get rid of species column 
+com_goiaba_grouped <- com_goiaba_grouped %>%
+  select(-especie)
 
+#add value to last day to make graph line go all the way to the end 
+com_goiaba_grouped[nrow(com_goiaba_grouped) + 1,] <- list(32, 25)
 
+#now create df without goiaba 
+
+sem_goiaba <- filtered %>%
+  select(goiaba == "sem goiaba")
 
 sem_goiaba_grouped <- 
   sem_goiaba %>%                             #Applying group_by &summarise
   group_by(dia) %>%
   summarise(especie = n())
 
-sem_goiaba_grouped$z <- 0
+sem_goiaba_grouped$cumspp <- 0
 
 sum <- 0
 
@@ -262,9 +256,36 @@ for (i in 1:nrow(sem_goiaba_grouped)) {
   sem_goiaba_grouped[i, 3] <- sum
 }
 
-colnames(sem_goiaba_grouped)[3] ="cumsum"
+#get rid of species column 
+sem_goiaba_grouped <- sem_goiaba_grouped %>%
+  select(-especie)
 
-(plot1 <- ggplot(com_goiaba_grouped, aes(dia, cumsum)) + 
+#merge two df into same df
+
+#create new datafram with all the days 
+
+#dia <- seq(1, 32, by = 1)
+
+#dia_df <- data.frame(dia)
+
+#df_goiaba <- merge(x=dia_df, y=com_goiaba_grouped,
+                #by="dia", all.x =T)
+
+#df_goiaba <- merge(x=df_goiaba, y=sem_goiaba_grouped,
+                   #by="dia", all.x =T)
+
+#complete(df_goiaba)
+
+#plot1 <- ggplot(df_goiaba, aes(dia, cumspp_cg, cumspp_sg)) + 
+    #geom_point(df_goiaba$cumspp_cg) + geom_line() +
+    #theme_classic() +
+    #xlab("sampling day")+
+    #ylab("cummulative number of species") +
+    #labs()
+
+
+
+(plot1 <- ggplot(com_goiaba_grouped, aes(dia, cumspp)) + 
     geom_point() + geom_line(color = "magenta") +
     geom_point(data = sem_goiaba_grouped) + 
     geom_line(data = sem_goiaba_grouped, color = "green") +
@@ -272,4 +293,202 @@ colnames(sem_goiaba_grouped)[3] ="cumsum"
     xlab("sampling day")+
     ylab("cummulative number of species") +
     labs())
+plot1
+
+#----------------GRAPH BY GUILD
+
+group_by_guild <- 
+  filtered %>%                             #Applying group_by &summarise
+  group_by(dia, guild) %>%
+  summarise(especie = n())
+
+##INVERT  
+
+invert <- group_by_guild %>%
+  filter(guild == "Invertebrate")
+
+invert <- invert %>%
+  select(-guild)
+
+sum <- 0
+
+invert$cummspp <- 0
+
+for (i in 1:nrow(invert)) {
+  #print(i)
+  sum <- (invert[i, 2] + sum) 
+  invert[i, 3] <- sum
+}
+
+invert <- invert %>%
+  select(-especie)
+
+
+
+##omnivore
+
+omn <- group_by_guild %>%
+  filter(guild == "Omnivore")
+
+omn <- omn %>%
+  select(-guild)
+
+sum <- 0
+
+omn$cummspp <- 0
+
+for (i in 1:nrow(omn)) {
+  #print(i)
+  sum <- (omn[i, 2] + sum) 
+  omn[i, 3] <- sum
+}
+
+omn <- omn %>%
+  select(-especie)
+
+omn[nrow(omn) + 1,] <- list(32, 8)
+
+##FruiNect
+
+fru <- group_by_guild %>%
+  filter(guild == "FruiNect")
+
+fru <- fru %>%
+  select(-guild)
+
+sum <- 0
+
+fru$cummspp <- 0
+
+for (i in 1:nrow(fru)) {
+  #print(i)
+  sum <- (fru[i, 2] + sum) 
+  fru[i, 3] <- sum
+}
+
+fru <- fru %>%
+  select(-especie)
+
+fru[nrow(fru) + 1,] <- list(32, 4)
+
+##PlantSeed
+
+plant <- group_by_guild %>%
+  filter(guild == "PlantSeed")
+
+plant <- plant %>%
+  select(-guild)
+
+sum <- 0
+
+plant$cummspp <- 0
+
+for (i in 1:nrow(plant)) {
+  #print(i)
+  sum <- (plant[i, 2] + sum) 
+  plant[i, 3] <- sum
+}
+
+plant <- plant %>%
+  select(-especie)
+
+plant[nrow(plant) + 1,] <- list(32, 2)
+
+##PLOT
+
+(plot3 <- ggplot(invert, aes(dia, cummspp)) + 
+    geom_point() + geom_line(color = "blue") +
+    geom_point(data = omn) + 
+    geom_line(data = omn, color = "red") +
+    geom_point(data = fru) + 
+    geom_line(data = fru, color = "purple") +
+    geom_point(data = plant) + 
+    geom_line(data = plant, color = "green") +
+    geom_point(data = group_by_data) + 
+    geom_line(data = group_by_data, color = "black") +
+    theme_classic() +
+    xlab("sampling day")+
+    ylab("cummulative number of species") +
+    labs()+
+    theme(legend.text = element_text(colour="blue", size=10, 
+                                     face="bold")))
+
+
+###-------GRAPH BY FRUIT CONSUMING OR NOT 
+
+
+group_by_fru_cons <- 
+  filtered %>%                             #Applying group_by &summarise
+  group_by(dia, cons_fruto) %>%
+  summarise(especie = n())
+
+
+fru_yes <- group_by_fru_cons %>%
+  filter(cons_fruto == "sim")
+
+fru_yes <- fru_yes %>%
+  select(-cons_fruto)
+
+sum <- 0
+
+fru_yes$cummspp <- 0
+
+for (i in 1:nrow(fru_yes)) {
+  #print(i)
+  sum <- (fru_yes[i, 2] + sum) 
+  fru_yes[i, 3] <- sum
+}
+
+fru_yes <- fru_yes %>%
+  select(-especie)
+
+fru_yes[nrow(fru_yes) + 1,] <- list(32, 23)
+
+
+##not fruit consuming
+
+
+fru_no <- group_by_fru_cons %>%
+  filter(cons_fruto == "não")
+
+fru_no <- fru_no %>%
+  select(-cons_fruto)
+
+sum <- 0
+
+fru_no$cummspp <- 0
+
+for (i in 1:nrow(fru_no)) {
+  #print(i)
+  sum <- (fru_no[i, 2] + sum) 
+  fru_no[i, 3] <- sum
+}
+
+fru_no <- fru_no %>%
+  select(-especie)
+
+
+##plot
+
+(plot2 <- ggplot(fru_yes, aes(dia, cummspp)) + 
+    geom_point() + geom_line(color = "blue") +
+    geom_point(data = fru_no) + 
+    geom_line(data = fru_no, color = "red") +
+    geom_point(data = group_by_data) + 
+    geom_line(data = group_by_data, color = "black") +
+    theme_classic() +
+    xlab("sampling day")+
+    ylab("cummulative number of species") +
+    labs())
+
+
+## 
+
+dia <- seq(1, 32, by = 1)
+
+dia_df <- data.frame(dia)
+
+df_fru <- merge(x=dia_df, y=fru_no,
+                    by="dia", all.x =T)
+
 
