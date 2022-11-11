@@ -16,7 +16,7 @@ package.list <- c("here", #so I don't have to deal with setting a WD
                   "ggplot2", #mantel test visualization 
                   "remotes",
                   "psych",
-                  "matrix"
+                  "bipartite"
 )
 
 
@@ -29,16 +29,15 @@ if(length(new.packages)) install.packages(new.packages)
 #and loading the packages into R with a for loop
 for(i in package.list){library(i, character.only = T)}
 
-library(Matrix)
 
 ####
 #LOAD DATA
 
-load_dados <- readr::read_csv(here::here("qualificação", "dados", "dados7.csv"))
+load_dados <- readr::read_csv(here::here("qualificação", "dados", "dados8.csv"))
 
 dados <- as_tibble(load_dados)
 
-subset_dados <- dados %>% select(1:5, 10:11, 21, 23)
+subset_dados <- dados %>% select(1:5, 10:11, 21, 23:24)
 
 fezes <- filter(subset_dados, fc == "y")
 
@@ -100,7 +99,6 @@ goiaba <- spp_corr3 %>%
                          #grepl("Nov", data) ~ "3"))
 
 
-data(elton_birds)
 
 elton_traits <- readr::read_tsv(here::here("qualificação", "dados","BirdFuncDat.txt"))
 
@@ -116,15 +114,15 @@ colnames(subset_diet)[2] ="especie"
 dados_diet <- merge(x=goiaba, y=subset_diet,
                     by="especie", all.x =T)
 
-colnames(dados_diet)[13] ="guild"
+colnames(dados_diet)[14] ="guild"
 
-colnames(dados_diet)[11] ="familia"
+colnames(dados_diet)[12] ="familia"
 
-colnames(dados_diet)[9] ="recap"
+colnames(dados_diet)[10] ="recap"
 
 dados_diet <- dados_diet %>%  
-  mutate(cons_fruto = case_when(`Diet-Fruit`> 0 ~ "sim",
-                                `Diet-Fruit` == 0 ~ "não",))
+  mutate(cons_fruto = case_when(`Diet-Fruit`> 0 ~ 1,
+                                `Diet-Fruit` == 0 ~ 0,))
 
 list_spp1 <- distinct(dados_diet, especie, familia, cons_fruto, guild, .keep_all = FALSE)
 
@@ -153,7 +151,9 @@ group_by_parcela <-
   summarise(especie = n_distinct(especie), indivíduos = n_distinct(amostra), 
             taxa_cap = (n_distinct(amostra)/(sum(rede_hora)/(n_distinct(amostra)/n_distinct(data)))),
                         rede_hora = sum(rede_hora)/(n_distinct(amostra)/n_distinct(data)),
-            recap = sum(recap))
+            recap = sum(recap),
+            seeds = sum(seeds),
+            fruit = sum(cons_fruto))
 
 
 write.csv(group_by_parcela, "summary.csv")
@@ -490,5 +490,96 @@ dia_df <- data.frame(dia)
 
 df_fru <- merge(x=dia_df, y=fru_no,
                     by="dia", all.x =T)
+
+fezes <- filter(subset_dados, fc == "y")
+
+###INTERACTION WEB
+summary(subset_dados)
+#rename the plots in the order i want 
+mat <- dados_diet %>% 
+  mutate(parcela = str_replace_all(parcela, "207", 
+                                 "09"))
+mat <- mat %>% 
+  mutate(parcela = str_replace_all(parcela, "87", 
+                                   "02"))
+
+mat <- mat %>% 
+  mutate(parcela = str_replace_all(parcela, "206", 
+                                   "06"))
+
+mat <- mat %>% 
+  mutate(parcela = str_replace_all(parcela, "20", 
+                                   "01"))
+
+mat <- mat %>% 
+  mutate(parcela = str_replace_all(parcela, "22", 
+                                   "03"))
+
+mat <- mat %>% 
+  mutate(parcela = str_replace_all(parcela, "90", 
+                                   "04"))
+
+mat <- mat %>% 
+  mutate(parcela = str_replace_all(parcela, "84", 
+                                   "05"))
+
+mat <- mat %>% 
+  mutate(parcela = str_replace_all(parcela, "88", 
+                                   "07"))
+
+mat <- mat %>% 
+  mutate(parcela = str_replace_all(parcela, "64", 
+                                   "08"))
+
+mat <- mat %>% 
+  mutate(parcela = str_replace_all(parcela, "56", 
+                                   "10"))
+#as.character(mat$parcela)
+
+
+inter_mat <- subset_dados %>%
+  filter(fc == "y") %>% #only feces collected
+  group_by(parcela) %>% 
+  arrange(parcela, .by_group=T)
+
+inter_mat <- mat %>%
+  #filter(fc == "y") %>% #only feces collected
+  #arrange(desc(cons_fruto)) %>%
+  group_by(parcela, especie) %>% 
+  summarise(amostras = n_distinct(amostra)) %>% # this just combines all the quantities from the observations into one value per family
+  #arrange(Order) %>% #sinc I imagine you will want to visualize this in order of different insect orders, this and the next line of code make sure that happens
+  pivot_wider(names_from = especie, #makes this in to a matrix with this column name
+              values_from = amostras) %>% #and values in cells filled with this column
+  column_to_rownames(var = "parcela")  #then, we set the row names to our flower visitor families
+
+inter_mat[is.na(inter_mat)] <- 0
+# to plot this as a web, I use the plotweb function from bipartite
+# you can find out more about this function by typing ?plotweb
+# in your R console. 
+
+inter_mat2 <- mat %>%
+  filter(fc == "y") %>% #only feces collected
+  arrange(guild, by.group=T) %>%
+  group_by(parcela, especie) %>% 
+  summarise(amostras = n_distinct(amostra)) %>% # this just combines all the quantities from the observations into one value per family
+  #arrange(Order) %>% #sinc I imagine you will want to visualize this in order of different insect orders, this and the next line of code make sure that happens
+  pivot_wider(names_from = especie, #makes this in to a matrix with this column name
+             values_from = amostras) %>% #and values in cells filled with this column
+  column_to_rownames(var = "parcela")  #then, we set the row names to our flower visitor families
+
+inter_mat[is.na(inter_mat)] <- 0
+
+??plotweb
+
+
+
+# I have it here with some of the defaults changed so it looks 
+# like it does, 
+plotweb(inter_mat,
+        method = "normal", # makes sure the families are in order I set them by the order of insects
+        low.spacing = 0.05, # spreads out the bottom of the graph
+        low.y=-1,
+        text.rot=90,
+        y.lim = c(-1.5, 4)) #squishes the m
 
 
